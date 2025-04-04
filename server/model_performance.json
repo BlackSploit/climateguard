@@ -1,0 +1,44 @@
+{
+    "SVM": {
+        "accuracy": 0.7859,
+        "precision": 0.6333,
+        "recall": 0.2815,
+        "f1_score": 0.3897,
+        "execution_time": 10.56
+    },
+    "RandomForest": {
+        "accuracy": 0.789,
+        "precision": 0.5697,
+        "recall": 0.537,
+        "f1_score": 0.5529,
+        "execution_time": 0.98
+    },
+    "XGBoost": {
+        "accuracy": 0.825,
+        "precision": 0.6617,
+        "recall": 0.5722,
+        "f1_score": 0.6137,
+        "execution_time": 0.92
+    },
+    "LogisticRegression": {
+        "accuracy": 0.7472,
+        "precision": 0.2381,
+        "recall": 0.0185,
+        "f1_score": 0.0344,
+        "execution_time": 0.02
+    },
+    "LightGBM": {
+        "accuracy": 0.8259,
+        "precision": 0.6659,
+        "recall": 0.5685,
+        "f1_score": 0.6134,
+        "execution_time": 0.44
+    },
+    "NeuralNetwork": {
+        "accuracy": 0.8156,
+        "precision": 0.6438,
+        "recall": 0.5389,
+        "f1_score": 0.5867,
+        "execution_time": 6.88
+    }
+}
