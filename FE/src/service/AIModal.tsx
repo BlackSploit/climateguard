@@ -44,7 +44,10 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 
-  const apiKey = 'AIzaSyCeITMZ29vgcom4XgviD1sZHWlzu_YshjY';
+  // const apiKey = 'AIzaSyCeITMZ29vgcom4XgviD1sZHWlzu_YshjY';
+  const apiKey = 'AIzaSyCu9SW9es8FjG-1DuaPhZNke_JlzrgRBXs';
+
+  // AIzaSyCu9SW9es8FjG-1DuaPhZNke_JlzrgRBXs
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({

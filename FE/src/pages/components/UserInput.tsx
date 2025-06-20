@@ -55,7 +55,7 @@ const UserInput: React.FC<UserInputProps> = ({ view, setView, fetchData, isLoadi
 
 <span className="mr-5"></span>
 
-<FormControl className="mui-input" size="small" >
+{/* <FormControl className="mui-input" size="small" >
           <InputLabel id="model-select-label">Model</InputLabel>
           <Select
             labelId="model-select-label"
@@ -70,7 +70,26 @@ const UserInput: React.FC<UserInputProps> = ({ view, setView, fetchData, isLoadi
             <MenuItem value="LightGBM">LightGBM</MenuItem>
             <MenuItem value="NeuralNetwork">Neural Network</MenuItem>
           </Select>
-        </FormControl>
+        </FormControl> */}
+
+<FormControl className="mui-input" size="small">
+  <InputLabel id="model-select-label">Model</InputLabel>
+  <Select
+    labelId="model-select-label"
+    id="model-select"
+    value={view}
+    onChange={handleView}
+    label="Model"  // ✅ Add this line
+  >
+    <MenuItem value="SVM">Support Vector Machine (Default)</MenuItem>
+    <MenuItem value="XGBoost">XGBoost</MenuItem>
+    <MenuItem value="RandomForest">Random Forest</MenuItem>
+    <MenuItem value="LogisticRegression">Logistic Regression</MenuItem>
+    <MenuItem value="LightGBM">LightGBM</MenuItem>
+    <MenuItem value="NeuralNetwork">Neural Network</MenuItem>
+  </Select>
+</FormControl>
+
 
         <span className="mr-5"></span>
 
